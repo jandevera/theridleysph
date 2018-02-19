@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>The Ridleys</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="the_ridleys_website.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		/*i used anchor tags instead*/
+		main.container {
+			position: relative;
+			height: 550px;
+			max-width: 768px;
+			/*background-size: 768px;*/
+			background-position: center -100px;
+		}
+		main {
+			background-image: url('img/TheRidleysEPCover.png');
+			background-size: 768px;
+			background-repeat: no-repeat;
+			background-color: transparent;	
+		}
+
+		/*the clickable links*/
+		main>a {
+			position: absolute;
+			color: transparent;
+			background-color: transparent;
+		}
+		/*hiding the links*/
+		main>a:hover {
+			color: white;
+			text-decoration: none;
+			background-color: rgba(0,0,0,0.8);
+		}
+		/*adjusting the text in the link*/
+		main>a>span {
+			margin-top: 1em;
+			font-size: 1.5em;
+		}
+
+		/*all the specific dimensions and coordinates of the divs*/
+		#first_link {
+			top: 55px;
+			left: 141px;
+			height: 434px;
+			width: 86px;
+		}
+		#second_link {
+			top: 27px;
+			left: 225px;
+			height: 436px;
+			width: 86px;
+		}
+		#third_link{
+			top: 67px;
+			left: 309px;
+			height: 434px;
+			width: 82px;
+		}
+		#fourth_link{
+			top: 53px;
+			left: 391px;
+			height: 435px;
+			width: 82px;
+		}
+		#fifth_link{
+			top: 27px;
+			left: 472px;
+			height: 435px;
+			width: 79px;
+		}
+		#sixth_link{
+			top: 67px; 
+			left: 551px;
+			height: 438px;
+			width: 78px;
+		}
+
+		/*the small screen version*/
+		main.container-fluid {
+			padding-top: 500px;
+			background-attachment: fixed;
+			background-size: 100%;
+			background-position: center center;
+		}
+		@media only screen and (max-width: 450px){
+			main.container-fluid{
+				background-position: center top;
+				padding-top: 1000px;
+			}
+		}
+		@media only screen and (max-width: 768px){
+			main.container-fluid{
+				background-position: center top;
+				padding-top: 1000px;
+			}
+		}
+
+		/*setting the sections*/
+		section {
+			background-color: rgba(0,0,0,0.75);
+			margin-top: 3em;
+			padding: 1em;
+			padding-top: 3em;
+			color: white;
+		}
+		/*removing the padding of the columns to put the images beside each other*/
+		main.container-fluid .col-xs-6 {
+			padding: 0;
+		}
+	</style>
+</head>
+<body>
+	<!-- main content of index.html -->
+ 	<main class="container hidden-sm hidden-xs">
+		<!-- About us -->
+		<a href="about.html" id="first_link">
+			<span class="glyphicon glyphicon-info-sign center-block text-center"></span>
+			<span class="center-block text-center">A</span>
+			<span class="center-block text-center">B</span>
+			<span class="center-block text-center">O</span>
+			<span class="center-block text-center">U</span>
+			<span class="center-block text-center">T</span>
+		</a> 
+		<!-- Store (merch, cd) -->
+		<a href="store.html" id="second_link">
+			<span class="glyphicon glyphicon-shopping-cart center-block text-center"></span>
+			<span class="center-block text-center">S</span>
+			<span class="center-block text-center">T</span>
+			<span class="center-block text-center">O</span>
+			<span class="center-block text-center">R</span>
+			<span class="center-block text-center">E</span>
+		</a>
+		<!-- Song links and lyrics -->
+		<a href="music.html" id="third_link">
+			<span class="glyphicon glyphicon-music center-block text-center"></span>
+			<span class="center-block text-center">M</span>
+			<span class="center-block text-center">U</span>
+			<span class="center-block text-center">S</span>
+			<span class="center-block text-center">I</span>
+			<span class="center-block text-center">C</span>
+		</a>
+		<!-- Gig scheds -->
+		<a href="sched.html" id="fourth_link">
+			<span class="glyphicon glyphicon-calendar center-block text-center"></span>
+			<span class="center-block text-center">S</span>
+			<span class="center-block text-center">C</span>
+			<span class="center-block text-center">H</span>
+			<span class="center-block text-center">E</span>
+			<span class="center-block text-center">D</span>
+		</a>
+		<!-- Blog -->
+		<a href="blog.html" id="fifth_link">
+			<span class="glyphicon glyphicon-book center-block text-center"></span>
+			<span class="center-block text-center">B</span>
+			<span class="center-block text-center">L</span>
+			<span class="center-block text-center">O</span>
+			<span class="center-block text-center">G</span>
+			<span class="center-block text-center">S</span>
+		</a>
+		<!-- Contact us -->
+		<a href="contact.html" id="sixth_link">
+			<span class="glyphicon glyphicon-envelope center-block text-center"></span>
+			<span class="center-block text-center">C</span>
+			<span class="center-block text-center">O</span>
+			<span class="center-block text-center">N</span>
+			<span class="center-block text-center">T</span>
+			<span class="center-block text-center">A</span>
+			<span class="center-block text-center">C</span>
+			<span class="center-block text-center">T</span>
+		</a>
+	</main>
+
+	<!-- for small screens -->
+	<main class="container-fluid hidden-md hidden-lg">
+		<!-- for about -->
+		<section class="row" id="about">
+			<img class="col-xs-4" src="img/band_pic.jpg">
+			<div class="col-xs-8">
+				<h1>Telling stories through songs</h1>
+				<p>A four-piece band from UP and UST. Different styles, different tastes, same goal: to tell stories. To know more about the band, click the button below!</p>
+				<a class="btn btn-primary center-block" href="about.html">Read more!</a>
+			</div>
+		</section>
+		<!-- for store -->
+		<section class="row" id="store">
+			<div class="col-xs-4 pull-right">
+				<div class="row">
+					<img class="col-xs-6" src="img/aphrodite_ep.jpg">
+					<img class="col-xs-6" src="img/TheRidleysEPCover.png">
+				</div>
+				<div class="row">
+					<img class="col-xs-6" src="img/meaningful_silence.jpg">
+					<img class="col-xs-6" src="img/the_one_only_i_can_see.jpg">
+				</div>
+			</div>
+			
+			<div class="col-xs-8">
+				<h1>Releases</h1>
+				<p>The Ridleys has released 2 EPs so far. Click the button below to check the store!</p>
+				<a class="btn btn-primary center-block" href="store.html">Check the store!</a>
+			</div>
+		</section>
+		<!-- for lyrics -->
+		<section class="row" id="music">
+			<img class="col-xs-4" src="img/Benny.jpg">
+			<div class="col-xs-8">
+				<h1>Music and Lyrics</h1>
+				<small>(jk dnt sue us coz of d title pls)</small>
+				<p>Do you know the song but you don't know the lyrics? Click the link below to see the lyrics and listen to our songs!</p>
+				<a class="btn btn-primary center-block" href="music.html">Listen to our songs!</a>
+			</div>
+		</section>
+		<!-- for sched -->
+		<section class="row" id="sched">
+			<img class="col-xs-4 pull-right" src="img/march2_sched.jpg">
+			<div class="col-xs-8">
+				<h1>Schedule</h1>
+				<p>Wanna see us live? Click the button below to see our schedule!</p>
+				<a class="btn btn-primary center-block" href="sched.html">Check our sched!</a>
+			</div>
+		</section>
+		<!-- for blog -->
+		<section class="row" id="blog">
+			<img class="col-xs-4" src="img/feb10_blog.jpg">
+			<div class="col-xs-8">
+				<h1>Blog</h1>
+				<p>To know what's happening to the band when we're offstage? Read our blogs!</p>
+				<a class="btn btn-primary center-block" href="blog.html">Go to our blog!</a>
+			</div>
+		</section>
+		<!-- for contact -->
+		<section class="row" id="contact">
+			<img class="col-xs-4 pull-right" src="img/feb14_sched.jpg">
+			<div class="col-xs-8">
+				<h1>Contact us</h1>
+				<p>Wanna invite us to your events? Click the button below to message us!</p>
+				<a class="btn btn-primary center-block" href="contact.html">Contact us!</a>
+			</div>
+		</section>
+	</main>
+	
+	<!-- IDK BUT THIS WORKED -->
+	<div class="clearfix"></div>
+
+	<!-- footer -->
+	<footer class="container">
+		<!-- on bigger screens -->
+		<nav class="navbar hidden-xs hidden-sm">
+			<small class="navbar-text">Copyright &copy; The Ridleys</small>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="https://fb.com/theridleysph" target="_blank"><span class="fa fa-facebook"></span></a></li>
+				<li><a href="https://twitter.com/theridleysph" target="_blank"><span class="fa fa-twitter"></span></a></li>
+				<li><a href="https://instagram.com/theridleysph" target="_blank"><span class="fa fa-instagram"></span></a></li>
+				<li><a href="https://www.youtube.com/channel/UCwpbGgtRxZSp6JU7ULOwpbQ" target="_blank"><span class="fa fa-youtube"></span></a></li>
+				<li><a href="https://open.spotify.com/artist/03KZ3tIgA3DSCU4o8PahVG" target="_blank"><span class="fa fa-spotify"></span></a></li>
+				<li><a href="https://theridleys.bandcamp.com" target="_blank"><span class="fa fa-bandcamp"></span></a></li>
+			</ul>
+		</nav>
+
+		<!-- on small screens -->
+		<div class="hidden-md hidden-lg">
+			<header>
+				<a href="index.html"></a>
+			</header>
+			<ul class="nav nav-stacked text-center">
+				<li><a href="https://fb.com/theridleysph" target="_blank"><span class="fa fa-facebook"></span>: fb.com/theridleysph</a></li>
+				<li><a href="https://twitter.com/theridleysph" target="_blank"><span class="fa fa-twitter"></span>: twitter.com/theridleysph</a></li>
+				<li><a href="https://instagram.com/theridleysph" target="_blank"><span class="fa fa-instagram"></span>: instagram.com/theridleysph</a></li>
+				<li><a href="https://www.youtube.com/channel/UCwpbGgtRxZSp6JU7ULOwpbQ" target="_blank"><span class="fa fa-youtube"></span>: youtube.com/theridleysph</a></li>
+				<li><a href="https://open.spotify.com/artist/03KZ3tIgA3DSCU4o8PahVG" target="_blank"><span class="fa fa-spotify"></span>: bit.ly/theridleysphonspotify</a></li>
+				<li><a href="https://theridleys.bandcamp.com" target="_blank"><span class="fa fa-bandcamp"></span>: theridleys.bandcamp.com</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

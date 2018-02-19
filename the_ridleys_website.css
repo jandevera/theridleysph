@@ -1,0 +1,99 @@
+* {
+	box-sizing: border-box;
+	/*border: 1px solid black;*/
+}
+
+/*TEMPORARY LAYOUT coz wala akong internet sa bahay*/
+
+/*THE GENERAL LAYOUT*/
+/*setting the background of the webpage*/
+body {
+	/*BG COLOR OF THE EP*/
+	/*background-color: rgb(253,244,226);*/
+	background-color: #fcf4e2;
+}
+
+/*the article of the page*/
+.well-lg {
+	background-color: white;
+	border-radius: 2em;
+	border: 0.25em solid gray;
+}
+
+/*line that separates the main and footer*/
+footer.container {
+	margin-top: 2em;
+	border-top: 2px solid gray;
+}
+
+/*making the image responsive*/
+img {
+	width: 100%;
+}
+
+/*the 'figcaption'*/
+aside img~strong {
+	line-height: 3em;
+}
+
+/*ADDED TODAY 02/15/18*/
+/*created the header link*/
+body>header, body>footer header {
+	height: 150px;
+	background-image: url('img/TheRidleysEPCover.png');
+	background-repeat: no-repeat;
+	background-position: center 95%;
+}
+body>header a, body>footer header a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/*styling the navbar*/
+.navbar-default {
+	background-color: transparent;
+	border: 0;
+}
+body>nav .container {
+	border-top: 2px solid gray;
+	border-bottom: 2px solid gray;
+}
+body>nav ul {
+	width: 100%;
+}
+body>nav li{
+	width: 16.6%;
+	text-align: center;
+}
+
+/*removing space above headers*/
+h1, h2, h3, h4, h5, h6, .page-header {
+	margin-top: 0;
+}
+
+/*making the font small*/
+blockquote {
+	line-height: 1.5em;
+	font-size: 1em;
+}
+
+/*adjusting the width to 100% because i changed the width to 1/6 of total width*/
+@media only screen and (max-width: 767px){
+	body>nav li{
+		width: 100%;
+	}
+	/*#myNavbar {
+		display: none;
+	}*/
+	/*.navbar-collapse.collapse {
+		display: none;
+	}*/
+}
+
+/*for the Spotify player*/
+iframe.spotify-audio-player {
+	height: 400px;
+	width: 100%;
+	margin-bottom: 5em;
+}
