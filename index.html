@@ -12,30 +12,26 @@
 			position: relative;
 			height: 550px;
 			max-width: 768px;
-			/*background-size: 768px;*/
 			background-position: center -100px;
-		}
-		main {
 			background-image: url('img/TheRidleysEPCover.png');
-			background-size: 768px;
+			background-size: 100%;
 			background-repeat: no-repeat;
-			background-color: transparent;	
 		}
 
 		/*the clickable links*/
-		main>a {
+		main.container>a {
 			position: absolute;
 			color: transparent;
 			background-color: transparent;
 		}
 		/*hiding the links*/
-		main>a:hover {
+		main.container>a:hover {
 			color: white;
 			text-decoration: none;
 			background-color: rgba(0,0,0,0.8);
 		}
 		/*adjusting the text in the link*/
-		main>a>span {
+		main.container>a>span {
 			margin-top: 1em;
 			font-size: 1.5em;
 		}
@@ -79,7 +75,7 @@
 		}
 
 		/*the small screen version*/
-		main.container-fluid {
+		/*main.container-fluid {
 			padding-top: 500px;
 			background-attachment: fixed;
 			background-size: 100%;
@@ -96,20 +92,61 @@
 				background-position: center top;
 				padding-top: 1000px;
 			}
-		}
+		}*/
 
 		/*setting the sections*/
 		section {
-			background-color: rgba(0,0,0,0.75);
-			margin-top: 3em;
 			padding: 1em;
-			padding-top: 3em;
+			padding-top: 400px;
+			height: 1024px;
+			background-size: auto 100%;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: center center;
+			background-color: black;
+		}
+		/*@media only screen and (max-width: 450px){
+			section {
+				background-size: auto 100%;
+			}	
+		}*/
+		#welcome {
+			background-image: url('img/TheRidleysEPCover.png');
+		}
+		#about {
+			background-size: auto 100%;
+			background-image: url('img/band_pic.jpg');
+		}
+		#store{
+			background-image: url('img/aphrodite_ep.jpg');
+		}
+		#music {
+			background-image: url('img/Benny.jpg');
+		}
+		#sched {
+			background-image: url('img/march2_sched.jpg');
+		}
+		#blog {
+			background-image: url('img/feb10_blog.jpg');
+		}
+		#contact {
+			background-image: url('img/TheRidleysEPCover.png');
+		}
+		#contact>a {
+			position: relative;
+			top: 320px;
+		}
+		html {
+			border: none;
+		}
+		.jumbotron{
+			background-color: rgba(0,0,0,0.8);
 			color: white;
 		}
 		/*removing the padding of the columns to put the images beside each other*/
-		main.container-fluid .col-xs-6 {
+		/*main.container-fluid .col-xs-6 {
 			padding: 0;
-		}
+		}*/
 	</style>
 </head>
 <body>
@@ -174,8 +211,7 @@
 	</main>
 
 	<!-- for small screens -->
-	<main class="container-fluid hidden-md hidden-lg">
-		<!-- for about -->
+	<!-- <main class="container-fluid hidden-md hidden-lg">
 		<section class="row" id="about">
 			<img class="col-xs-4" src="img/band_pic.jpg">
 			<div class="col-xs-8">
@@ -184,7 +220,6 @@
 				<a class="btn btn-primary center-block" href="about.html">Read more!</a>
 			</div>
 		</section>
-		<!-- for store -->
 		<section class="row" id="store">
 			<div class="col-xs-4 pull-right">
 				<div class="row">
@@ -203,7 +238,6 @@
 				<a class="btn btn-primary center-block" href="store.html">Check the store!</a>
 			</div>
 		</section>
-		<!-- for lyrics -->
 		<section class="row" id="music">
 			<img class="col-xs-4" src="img/Benny.jpg">
 			<div class="col-xs-8">
@@ -213,7 +247,6 @@
 				<a class="btn btn-primary center-block" href="music.html">Listen to our songs!</a>
 			</div>
 		</section>
-		<!-- for sched -->
 		<section class="row" id="sched">
 			<img class="col-xs-4 pull-right" src="img/march2_sched.jpg">
 			<div class="col-xs-8">
@@ -222,7 +255,6 @@
 				<a class="btn btn-primary center-block" href="sched.html">Check our sched!</a>
 			</div>
 		</section>
-		<!-- for blog -->
 		<section class="row" id="blog">
 			<img class="col-xs-4" src="img/feb10_blog.jpg">
 			<div class="col-xs-8">
@@ -231,7 +263,6 @@
 				<a class="btn btn-primary center-block" href="blog.html">Go to our blog!</a>
 			</div>
 		</section>
-		<!-- for contact -->
 		<section class="row" id="contact">
 			<img class="col-xs-4 pull-right" src="img/feb14_sched.jpg">
 			<div class="col-xs-8">
@@ -240,15 +271,72 @@
 				<a class="btn btn-primary center-block" href="contact.html">Contact us!</a>
 			</div>
 		</section>
+	</main> -->
+	<main class="container-fluid hidden-md hidden-lg">
+		<section class="row" id="welcome"></section>
+		<section class="row" id="about">
+			<div class="jumbotron">
+				<h1>Telling stories through songs</h1>
+				<p>A four-piece band from UP and UST. Different styles, different tastes, same goal: to tell stories. To know more about the band, click the button below!</p>
+				<a class="btn btn-primary center-block" href="about.html">Read more!</a>
+			</div>
+		</section>
+		<section class="row" id="store">
+			<!-- <div class="col-xs-4 pull-right">
+				<div class="row">
+					<img class="col-xs-6" src="img/aphrodite_ep.jpg">
+					<img class="col-xs-6" src="img/TheRidleysEPCover.png">
+				</div>
+				<div class="row">
+					<img class="col-xs-6" src="img/meaningful_silence.jpg">
+					<img class="col-xs-6" src="img/the_one_only_i_can_see.jpg">
+				</div>
+			</div> -->
+			
+			<div class="jumbotron">
+				<h1>Releases</h1>
+				<p>The Ridleys has released 2 EPs so far. Click the button below to check the store!</p>
+				<a class="btn btn-primary center-block" href="store.html">Check the store!</a>
+			</div>
+		</section>
+		<section class="row" id="music">
+			<div class="jumbotron">
+				<h1>Music and Lyrics</h1>
+				<p>Do you know the song but you don't know the lyrics? Click the link below to see the lyrics and listen to our songs!</p>
+				<a class="btn btn-primary center-block" href="music.html">Listen to our songs!</a>
+			</div>
+		</section>
+		<section class="row" id="sched">
+			<div class="jumbotron">
+				<h1>Schedule</h1>
+				<p>Wanna see us live? Click the button below to see our schedule!</p>
+				<a class="btn btn-primary center-block" href="sched.html">Check our sched!</a>
+			</div>
+		</section>
+		<section class="row" id="blog">
+			<div class="jumbotron">
+				<h1>Blog</h1>
+				<p>To know what's happening to the band when we're offstage? Read our blogs!</p>
+				<a class="btn btn-primary center-block" href="blog.html">Go to our blog!</a>
+			</div>
+		</section>
+		<section class="row" id="contact">
+			<div class="jumbotron">
+				<h1>Contact us</h1>
+				<p>Wanna invite us to your events? Click the button below to message us!</p>
+				<a class="btn btn-primary center-block" href="contact.html">Contact us!</a>
+			</div>
+			<a class="btn btn-primary" href="#"><span class="glyphicon glyphicon-menu-up"></span> Back to top</a>
+		</section>
 	</main>
 	
 	<!-- IDK BUT THIS WORKED -->
-	<div class="clearfix"></div>
+	<!-- <div class="clearfix"></div> -->
 
 	<!-- footer -->
-	<footer class="container">
+	<footer class="container hidden-sm hidden-xs">
 		<!-- on bigger screens -->
-		<nav class="navbar hidden-xs hidden-sm">
+		<nav class="navbar">
 			<small class="navbar-text">Copyright &copy; The Ridleys</small>
 			<ul class="nav navbar-nav navbar-right">
 				<li><a href="https://fb.com/theridleysph" target="_blank"><span class="fa fa-facebook"></span></a></li>
@@ -261,7 +349,7 @@
 		</nav>
 
 		<!-- on small screens -->
-		<div class="hidden-md hidden-lg">
+		<!-- <div class="hidden-md hidden-lg">
 			<header>
 				<a href="index.html"></a>
 			</header>
@@ -273,7 +361,7 @@
 				<li><a href="https://open.spotify.com/artist/03KZ3tIgA3DSCU4o8PahVG" target="_blank"><span class="fa fa-spotify"></span>: bit.ly/theridleysphonspotify</a></li>
 				<li><a href="https://theridleys.bandcamp.com" target="_blank"><span class="fa fa-bandcamp"></span>: theridleys.bandcamp.com</a></li>
 			</ul>
-		</div>
+		</div> -->
 	</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
